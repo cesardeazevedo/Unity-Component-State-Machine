@@ -1,0 +1,8 @@
+Library/*
+Temp/*
+*.meta
+
+/*.csproj
+/*.sln
+/*.suo
+
