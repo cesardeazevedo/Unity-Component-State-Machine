@@ -16,18 +16,18 @@ public class EnemyMovementController : MonoBehaviour {
 
     private float speed;
 
-	private void Awake () 
+    private void Awake ()
     {
         MovBehaviour = GetComponent<Movement>();
         Behaviour = GetComponent<PlayerBehaviour>();
-	}
-	
-	private void Update () 
+    }
+
+    private void Update ()
     {
         Vector3 pos = Target.position;
         pos.x = Mathf.SmoothDamp(transform.position.x, pos.x > transform.position.x ? pos.x - 1f : pos.x + 1f , ref speed, smooth);
         pos.y = 0;
         MovBehaviour.SetPosition(pos);
         Behaviour.Movement();
-	}
+    }
 }

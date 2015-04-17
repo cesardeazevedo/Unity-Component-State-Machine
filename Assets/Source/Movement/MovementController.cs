@@ -9,14 +9,14 @@ public class MovementController : MonoBehaviour
     private PlayerBehaviour behaviour;
     private Movement Movementbehaviour;
 
-    private void Awake () 
-	{
+    private void Awake ()
+    {
         behaviour = GetComponent<PlayerBehaviour>();
         Movementbehaviour = GetComponent<Movement>();
         JumpBehaviour = GetComponent<Jump>();
     }
 
-    private void Update () 
+    private void Update ()
     {
         if(!behaviour.IsAlive())
             return;

@@ -10,8 +10,8 @@ public class Dead : StateComponentBase<PlayerBehaviour>
     [HideInInspector]
     public bool IsAlive = true;
 
-    public override void Awake () 
-	{
+    public override void Awake ()
+    {
         base.Awake();
         heath = GetComponent<Heath>();
     }
@@ -26,12 +26,12 @@ public class Dead : StateComponentBase<PlayerBehaviour>
     {
     }
 
-    private void Update () 
+    private void Update ()
     {
         if(heath.IsZero() && !base.IsActive){
             IsAlive = false;
             Behaviour.ChangeState(PlayerBehaviour.States.Dead);
-			//Destroy the GameObject
+            //Destroy the GameObject
         }
     }
 }
