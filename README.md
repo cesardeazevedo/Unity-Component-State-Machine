@@ -2,6 +2,7 @@
 
 A Simple Unity State Machine designed with components
 
+![screenshot](http://i.cubeupload.com/PXhCZo.png)
 
 #How to use
 
